@@ -1,8 +1,12 @@
-<h1>{{ name | titlecase }}</h1>
-<h1>{{ value | number }}</h1>
-<h1>{{ obj | json }}</h1>
-
-
-<button (click)="showName()">
-  Change Name
+<div class="text-layout">
+  <h1>{{ name | titlecase }}</h1>
+  <h1>{{ value | number }}</h1>
+  <h1>{{ obj | json }}</h1>
+  
+  
+</div>
+<button pButton
+  (click)="showName()"
+  label="Change name"
+  >
 </button>
