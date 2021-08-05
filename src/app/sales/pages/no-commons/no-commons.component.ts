@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-commons',
@@ -64,6 +65,17 @@ export class NoCommonsComponent {
       name: 'Aquaman',
       flight: false,
     },
-  ]
+  ];
+
+  myObservable = interval(1000);
+
+  promiseValue = new Promise( (res, rej ) => {
+    setTimeout( () => {
+      res('Promise end!');
+    }, 3500)
+  });
+
+
+
 
 }
