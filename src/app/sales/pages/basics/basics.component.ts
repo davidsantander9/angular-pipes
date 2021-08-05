@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-basics',
@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class BasicsComponent implements OnInit {
+export class BasicsComponent {
+
+  nameLower: string = 'david';
+  nameUpper: string = 'DAVID';
+  nameComplete: string = 'dAVid c SAntanDeR';
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
