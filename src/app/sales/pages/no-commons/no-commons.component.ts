@@ -18,7 +18,7 @@ export class NoCommonsComponent {
     'F': 'invitarla',
   }
 
-  clients: string[] = ['Carolina', 'Luis', 'Juan'];
+  clients: string[] = ['Carolina', 'Luis', 'Juan','David'];
 
   clientsMap =  {
     '=0': 'no tenemos ningun cliente esperando.',

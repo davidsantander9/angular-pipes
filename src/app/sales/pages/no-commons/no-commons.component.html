@@ -39,5 +39,20 @@
             </p-button>
         </p-fieldset>
     </div>
-    
+</div>
+<div class="grid">
+    <div class="col col-md-6">
+        <p-fieldset 
+            [toggleable]="true"
+            legend="Slice Pipe">
+            <b>Original</b>
+            <pre>{{ clients }}</pre>
+
+            <b>slice:0:2</b>
+            <pre>{{ clients | slice:0 }}</pre>
+
+            <b>slice:1:2</b>
+            <pre>{{ clients | slice:1:2 }}</pre>
+        </p-fieldset>
+    </div>
 </div>
