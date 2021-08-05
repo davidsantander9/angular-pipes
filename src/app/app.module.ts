@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { SalesModule } from './sales/sales.module';
 
+import LocalEsMx from '@angular/common/locales/es-MX';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData( LocalEsMx );
 
 
 @NgModule({
@@ -16,12 +20,14 @@ import { SalesModule } from './sales/sales.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    SalesModule,
+    SalesModule,  
   ],
   exports: [
     
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'es-Mx' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
