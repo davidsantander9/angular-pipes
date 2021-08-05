@@ -9,7 +9,14 @@
         <p-fieldset 
             [toggleable]="true"
             legend="i18nSelect Pipe">
-            In tempor proident Lorem et laboris duis in exercitation. Aliquip proident magna ad magna voluptate. Nostrud enim id ex mollit id duis ullamco deserunt laborum pariatur dolor. Ea aliqua culpa irure ut voluptate magna proident. Minim consectetur id sunt amet veniam ipsum voluptate cillum aliqua excepteur nulla Lorem esse.
+            <p>
+                Greets {{ name }}, it is a pleasure invite you to our event
+            </p>
+            <p>
+                Saludos {{ name }}, es un placer 
+                {{ gender | i18nSelect:invitationMap }} 
+                a nuestro evento
+            </p>
         </p-fieldset>
     </div>
     <div class="col col-md-6">
