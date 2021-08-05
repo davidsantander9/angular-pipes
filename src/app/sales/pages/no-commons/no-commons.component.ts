@@ -41,4 +41,29 @@ export class NoCommonsComponent {
     }
   }
 
+  person = {
+    name: 'Brandon',
+    age: 25,
+    address: 'Mexico City, Mexico',
+  }
+
+  heroes = [
+    {
+      name: 'Batman',
+      flight: false,
+    },
+    {
+      name: 'Superman',
+      flight: true,
+    },
+    {
+      name: 'Robin',
+      flight: false,
+    },
+    {
+      name: 'Aquaman',
+      flight: false,
+    },
+  ]
+
 }
