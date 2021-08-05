@@ -7,9 +7,11 @@ import { SharedModule } from './shared/shared.module';
 import { SalesModule } from './sales/sales.module';
 
 import LocalEsMx from '@angular/common/locales/es-MX';
+import LocalFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 
 registerLocaleData( LocalEsMx );
+registerLocaleData( LocalFr );
 
 
 @NgModule({
