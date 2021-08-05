@@ -18,12 +18,27 @@ export class NoCommonsComponent {
     'F': 'invitarla',
   }
 
-  clientes: string[] = ['Carolina', 'Luis', 'Juan'];
+  clients: string[] = ['Carolina', 'Luis', 'Juan'];
 
   clientsMap =  {
     '=0': 'no tenemos ningun cliente esperando.',
     '=1': 'tenemos un cliente esperando.',
     'other': 'tenemos # clientes esperando'
+  }
+
+  deleteCliente(){
+    this.clients.pop();
+  }
+
+  changeClient(){
+
+    if( this.gender === 'M'){
+      this.name = 'Gaby';
+      this.gender = 'F';
+    }else{
+      this.name = 'David';
+      this.gender = 'M';
+    }
   }
 
 }

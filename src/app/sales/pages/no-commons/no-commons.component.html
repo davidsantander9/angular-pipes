@@ -17,13 +17,27 @@
                 {{ gender | i18nSelect:invitationMap }} 
                 a nuestro evento
             </p>
+            <p-button
+                label="Change Person"
+                (onClick)="changeClient()"
+            >
+            </p-button>
         </p-fieldset>
     </div>
     <div class="col col-md-6">
         <p-fieldset 
             [toggleable]="true"
             legend="i18nPlural Pipe">
-            Actualmente {{ clientes.length | i18nPlural:clientsMap }}
+            <p>
+                Actualmente {{ clients.length | i18nPlural:clientsMap }}
+            </p>
+            <p-button
+                label="Delete Cliente"
+                class="p-button-danger"
+                (onClick)="deleteCliente()"
+            >
+            </p-button>
         </p-fieldset>
     </div>
+    
 </div>
