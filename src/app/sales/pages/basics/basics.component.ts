@@ -12,6 +12,8 @@ export class BasicsComponent {
   nameUpper: string = 'DAVID';
   nameComplete: string = 'dAVid c SAntanDeR';
 
+  date: Date = new Date();
+
   constructor() { }
 
 }
