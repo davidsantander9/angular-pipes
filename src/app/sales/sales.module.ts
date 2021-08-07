@@ -8,6 +8,7 @@ import { SortComponent } from './pages/sort/sort.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { uppercasePipe } from './pipes/uppercase.pipe';
 import { flightPipe } from './pipes/flight.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 
 
@@ -19,6 +20,7 @@ import { flightPipe } from './pipes/flight.pipe';
     SortComponent,
     uppercasePipe,
     flightPipe,
+    SortPipe,
   ],
   imports: [
     CommonModule,
