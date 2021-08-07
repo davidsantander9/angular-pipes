@@ -6,11 +6,19 @@ import { Hero } from '../interfaces/sales.interfaces';
 })
 export class SortPipe implements PipeTransform {
 
-  transform(heroes: Hero[]): Hero[] {
-    
-    heroes = heroes.sort( (a,b) => (a.name > b.name) ? 1 : -1 )
+  transform(heroes: Hero[], sortby: string = ''): Hero[] {
 
-    return heroes;
+    switch ( sortby ) {
+      case 'name':
+        return heroes.sort( (a,b) => (a.name > b.name) ? 1 : -1 );
+      case 'flight':
+        return heroes.sort( (a,b) => (a.flight > b.flight) ? -1 : 1 )
+      case 'color':
+        return heroes.sort( (a,b) => (a.color > b.color) ? 1 : -1 )
+      default:
+        return heroes;
+    }
+  
   }
 
 }

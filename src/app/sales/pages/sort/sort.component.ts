@@ -10,6 +10,7 @@ import { Color, Hero } from '../../interfaces/sales.interfaces';
 export class SortComponent{
 
   inUpperCase: boolean = false;
+  sortBy: string = 'name';
 
   heroes: Hero[] = [
     {
@@ -41,6 +42,10 @@ export class SortComponent{
 
   toogle(){
     this.inUpperCase = !this.inUpperCase;
+  }
+
+  changeSort(value: string):void {
+    this.sortBy = value;
   }
 
 }
