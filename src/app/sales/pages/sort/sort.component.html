@@ -6,6 +6,17 @@
 </div>
 <div class="grid">
     <div class="col col-md-6">
-        <p>{{ 'test'| uppercasepipe }}</p>
+        <p-fieldset 
+            [toggleable]="true"
+            legend="Custom uppercase">
+            <p>
+                {{ 'test'| uppercasepipe:inUpperCase }}
+            </p>
+            <p-button
+                    label="Change Person"
+                    (onClick)="toogle()"
+            ></p-button>
+        </p-fieldset>
+
     </div>
 </div>

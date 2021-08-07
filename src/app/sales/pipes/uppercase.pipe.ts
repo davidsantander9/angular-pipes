@@ -6,8 +6,13 @@ import { Pipe, PipeTransform } from "@angular/core";
 
 export class uppercasePipe implements PipeTransform {
 
-    transform(value: string): string{
-        return 'Hello World';
+    transform(value: string, inUppercase: boolean = true ): string{
+
+        if( inUppercase ){
+            return value.toUpperCase();
+        }else{
+            return value.toLowerCase();
+        }
     }
 
 }
