@@ -7,6 +7,7 @@ import { BasicsComponent } from './pages/basics/basics.component';
 import { SortComponent } from './pages/sort/sort.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { uppercasePipe } from './pipes/uppercase.pipe';
+import { flightPipe } from './pipes/flight.pipe';
 
 
 
@@ -16,7 +17,8 @@ import { uppercasePipe } from './pipes/uppercase.pipe';
     NoCommonsComponent,
     BasicsComponent,
     SortComponent,
-    uppercasePipe
+    uppercasePipe,
+    flightPipe,
   ],
   imports: [
     CommonModule,
