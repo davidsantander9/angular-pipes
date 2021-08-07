@@ -6,6 +6,7 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { SortComponent } from './pages/sort/sort.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { uppercasePipe } from './pipes/uppercase.pipe';
 
 
 
@@ -14,7 +15,8 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     NumbersComponent,
     NoCommonsComponent,
     BasicsComponent,
-    SortComponent
+    SortComponent,
+    uppercasePipe
   ],
   imports: [
     CommonModule,
